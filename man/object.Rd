@@ -26,9 +26,9 @@ opt.gt.1(level, D, z, basis, subsets, hpa.start, give.answers=FALSE, ...)
   \item{hpa.start}{Starting value for hyperparameter object}
   \item{give.answers}{Boolean, with default \code{FALSE} meaning to
     return just the point estimate, and \code{TRUE} meaning to return
-    extra information from the call  to \code{optim()}.}
+    extra information from the call  to \code{optim()}}
   \item{...}{Extra arguments passed to \code{optim()}.  A common one
-    would be \code{control=list(trace=100)}.}
+    would be \code{control=list(trace=100)}}
 }
 \details{
 This function is the object function used in toy optimizers
@@ -36,8 +36,8 @@ This function is the object function used in toy optimizers
 }
 \references{
   M. C. Kennedy and A. O'Hagan 2000. \dQuote{Predicting the output from
-    a complex computer code when fast approximations are available}
-  Biometrika, 87(1): pp1-13
+    a complex computer code when fast approximations are available}.
+  \emph{Biometrika}, 87(1): pp1-13
   }
 \author{Robin K. S. Hankin}
 \seealso{\code{\link{genie}}}  

@@ -15,7 +15,7 @@ cdash.fun(x, xdash=x, V=NULL, Vinv=NULL, D1, subsets, basis, hpa, method=2)
   \item{x,xdash}{Points in parameter space; or, if a matrix,
     interpret the rows as points in parameter space.  Note that the
     default value of \code{xdash} (viz \code{x}) will return the
-    variance-covariance matrix of a set of points.}
+    variance-covariance matrix of a set of points}
   \item{D1}{Design matrix}
   \item{subsets}{Subset object}
   \item{hpa}{hyperparameter object}
@@ -29,7 +29,7 @@ cdash.fun(x, xdash=x, V=NULL, Vinv=NULL, D1, subsets, basis, hpa, method=2)
     identical methods to use.  See the source code for details, but
     default option 2 seems to be the best.  Bear in mind that option 3
     does not require inversion of a matrix, but is not faster in
-    practice.}
+    practice}
 }
 \value{
 Returns a matrix of covariances
