@@ -33,12 +33,12 @@ Maintainer:  <hankin.robin@gmail.com>
 }
 \references{
   R. K. S. Hankin 2005. \dQuote{Introducing BACCO, an R bundle for
-    Bayesian analysis of computer code output}, \emph{Journal of Statistical
-  Software}, 14(16)
+    Bayesian analysis of computer code output}, Journal of Statistical
+  Software, 14(16)
 
    M. C. Kennedy and A. O'Hagan 2000. \dQuote{Predicting the output from
     a complex computer code when fast approximations are available}
-  \emph{Biometrika}, 87(1): pp1-13
+  Biometrika, 87(1): pp1-13
 }
 \keyword{package}
 \examples{

@@ -199,7 +199,7 @@ function (x, hpa, basis)
   if (is.vector(x)) {
     x <- t(x)
   }
-  out <- kronecker(jj, t(basis(x)), make = TRUE)
+  out <- kronecker(jj, t(basis(x)), make.dimnames = TRUE)
   colnames(out) <- rownames(x)
   return(drop(out))
 }

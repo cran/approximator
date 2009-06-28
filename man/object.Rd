@@ -36,8 +36,8 @@ This function is the object function used in toy optimizers
 }
 \references{
   M. C. Kennedy and A. O'Hagan 2000. \dQuote{Predicting the output from
-    a complex computer code when fast approximations are available}.
-  \emph{Biometrika}, 87(1): pp1-13
+    a complex computer code when fast approximations are available}
+  Biometrika, 87(1): pp1-13
   }
 \author{Robin K. S. Hankin}
 \seealso{\code{\link{genie}}}  

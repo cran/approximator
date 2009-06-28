@@ -1,4 +1,4 @@
-require(approximator, quietly=TRUE, save=FALSE)
+require(approximator, quietly=TRUE)
 
 "D1.genie" <- 
 structure(c(0, 0.300584544427527, 0.428221180481837, 0.232272999730112, 

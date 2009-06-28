@@ -25,7 +25,7 @@ mdash.fun(x, D1, subsets, hpa, Vinv = NULL, use.Vinv = TRUE, z, basis)
 \references{
   M. C. Kennedy and A. O'Hagan 2000. \dQuote{Predicting the output from
     a complex computer code when fast approximations are available}
-  \emph{Biometrika}, 87(1): pp1-13
+  Biometrika, 87(1): pp1-13
   }
 \author{Robin K. S. Hankin}
 \examples{

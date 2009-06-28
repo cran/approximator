@@ -1,5 +1,5 @@
-require(emulator, quietly=TRUE, save=FALSE)
-require(approximator, quietly=TRUE, save=FALSE)
+require(emulator, quietly=TRUE)
+require(approximator, quietly=TRUE)
 
 "D1.toy" <-
   matrix(
