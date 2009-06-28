@@ -53,13 +53,20 @@ object(level=4, D=D1.toy , z=z.toy,basis=basis.toy,
 # (a bigger example is given on the genie help page)
 jj <- list(trace=100,maxit=10)
 
-hpa.toy.level1 <- opt.1(D=D1.toy, z=z.toy, basis=basis.toy, subsets=subsets.toy, hpa.start=hpa.toy,control=jj)
+hpa.toy.level1 <- opt.1(D=D1.toy, z=z.toy, basis=basis.toy,
+          subsets=subsets.toy, hpa.start=hpa.toy,control=jj)
 
-hpa.toy.level2 <- opt.gt.1(level=2, D=D1.toy, z=z.toy, basis=basis.toy, subsets=subsets.toy, hpa.start=hpa.toy.level1,control=jj)
+hpa.toy.level2 <- opt.gt.1(level=2, D=D1.toy, z=z.toy,
+           basis=basis.toy, subsets=subsets.toy,
+           hpa.start=hpa.toy.level1, control=jj)
 
-hpa.toy.level3 <- opt.gt.1(level=3, D=D1.toy, z=z.toy, basis=basis.toy, subsets=subsets.toy, hpa.start=hpa.toy.level2,control=jj) 
+hpa.toy.level3 <- opt.gt.1(level=3, D=D1.toy, z=z.toy,
+           basis=basis.toy, subsets=subsets.toy,
+           hpa.start=hpa.toy.level2, control=jj) 
 
-hpa.toy.level4 <- opt.gt.1(level=4, D=D1.toy, z=z.toy, basis=basis.toy, subsets=subsets.toy, hpa.start=hpa.toy.level3,control=jj)
+hpa.toy.level4 <- opt.gt.1(level=4, D=D1.toy, z=z.toy,
+           basis=basis.toy, subsets=subsets.toy,
+           hpa.start=hpa.toy.level3, control=jj)
 
 } 
 \keyword{array}

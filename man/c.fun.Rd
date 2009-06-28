@@ -48,11 +48,11 @@ Returns a matrix of covariances
   is a kind of prior covariance matrix.  Matrix \eqn{c'(x,x')} is a
   posterior covariance matrix, conditional on the code observations.
 
-  Function \code{A()} evaluates \eqn{c_t(x,x')} in a nice vectorized way.
+  Function \code{Afun()} evaluates \eqn{c_t(x,x')} in a nice vectorized way.
 
   Equation 7 of KOH2000 contains a typo.
 }
-\seealso{\code{\link{A}}}
+\seealso{\code{\link{Afun}}}
 \examples{
 data(toyapps)
 

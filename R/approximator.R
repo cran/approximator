@@ -1,6 +1,6 @@
 require(emulator)
 
-"A" <-
+"Afun" <-
 function (level, Di, Dj, hpa) 
 {
     corr.matrix(Di, Dj, pos.def.matrix = hpa$B[[level]])
@@ -57,7 +57,7 @@ function (D1, subsets, hpa)
         out <- matrix(0, nrow(Dl), nrow(Dk))
         for (i in 1:min(k, l)) {
             out <- out + Pi(hpa, i, k - 1) * Pi(hpa, i, l - 1) * 
-                hpa$sigma_squareds[i] * A(level = i, Dk, Dl, hpa)
+                hpa$sigma_squareds[i] * Afun(level = i, Dk, Dl, hpa)
         }
         return(out)
     }
@@ -280,9 +280,9 @@ function(level,D,z,basis,subsets,hpa)
   rhos <- hpa$rhos
   sigma_squared <- hpa$sigma_squareds
   if(FALSE){
-    bit1 <- log(det(A(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa)))
+    bit1 <- log(det(Afun(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa)))
   }
-  jj <- A(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa)
+  jj <- Afun(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa)
   
   bit1 <- sum(log(abs(eigen(jj,TRUE,TRUE)$values)))
 
@@ -300,7 +300,7 @@ function(level,D,z,basis,subsets,hpa)
   u <- length(jj)/length(z)
   betahat <- jj[ (1+(level-1)*u):(level*u)]
   mismatch <- d -  basis(D[subsets[[level]],]) %*% betahat
-  mat <- solve(sigma_squared[[level]]*A(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa))
+  mat <- solve(sigma_squared[[level]]*Afun(level=level,Di=D[subsets[[level]],,drop=FALSE],Dj=NULL,hpa=hpa))
   bit3 <-  quad.form(mat,mismatch)
   return(bit1 + bit2 + bit3)
 }
@@ -336,7 +336,7 @@ function (x, D1, subsets, hpa)
     rhos <- hpa$rhos
     sigma_squareds <- hpa$sigma_squareds
     x <- t(x)
-    t.old <- prod(rhos) * sigma_squareds[1] * as.vector(A(level = 1, 
+    t.old <- prod(rhos) * sigma_squareds[1] * as.vector(Afun(level = 1, 
         Di = x, Dj = D1[subsets[[1]],,drop=FALSE ], hpa = hpa))
     out <- t.old
     s <- length(subsets)
@@ -344,7 +344,7 @@ function (x, D1, subsets, hpa)
     for (i in 2:s) {
         t.dash <- t.old[match(subsets[[i]], subsets[[i - 1]])]
         t.new <- rhos[i - 1] * t.dash + sigma_squareds[i] * Pi(hpa, i, 
-            s - 1) * as.vector(A(level = i, Di = x, Dj = D1[subsets[[i]], 
+            s - 1) * as.vector(Afun(level = i, Di = x, Dj = D1[subsets[[i]], 
             , drop = FALSE], hpa = hpa))
         out <- c(out, t.new)
         t.old <- t.new
@@ -416,7 +416,7 @@ function(level, D, z, basis, subsets, hpa.start, give.answers=FALSE,
   out <- 0
   for(i in 1:s){
     out <- out +
-      Pi(hpa,i,s-1)^2*hpa$sigma_squareds[i]*A(level=i,x,xdash,hpa=hpa)
+      Pi(hpa,i,s-1)^2*hpa$sigma_squareds[i]*Afun(level=i,x,xdash,hpa=hpa)
   }
   return(out)
 }
