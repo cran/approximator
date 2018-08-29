@@ -20,10 +20,14 @@ License: \tab GPL\cr
 This package implements the Bayesian approximation techniques discussed
 in Kennedy and O'Hagan 2000.
 
-In its simplest form, it takes input from a \dQuote{slow} code and a
-\dQuote{fast} code, each run at different points in parameter space.
-The approximator package then uses both sets of model runs to infer what
-the top level code would produce at a given, untried point in parameter space.
+In its simplest form, it takes input from a \dQuote{slow} but accurate
+code and a \dQuote{fast} but inaccurate code, each run at different
+points in parameter space.  The approximator package then uses both sets
+of model runs to infer what the slow code would produce at a given,
+untried point in parameter space.
+
+The package includes functionality to work with a hierarchy of codes
+with increasing accuracy.
 
 }
 \author{

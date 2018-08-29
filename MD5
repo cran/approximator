@@ -1,12 +1,12 @@
-cf92ba5ab8783d1c2ee5683e15f28a97 *DESCRIPTION
-c9c173f34577ff6d88d3799a4355989f *NAMESPACE
+687caab0c0c4001350e3a1980d9f7af8 *DESCRIPTION
+cc55cd97b0a0f1d08672c45bb64c6266 *NAMESPACE
 ca747ac690e91c8030ebbdab68954ae7 *R/approximator.R
-c56b1cad4100c51e48e7426ae11ba97d *build/vignette.rds
-b18f5bdd0f2dc1010a09498112e011d7 *data/genie.rda
-6501d77c332b7b6b82ac733791ecfe5c *data/toyapps.rda
+72b72d401636351890dddecc052e9b17 *build/vignette.rds
+64abfd05075154bcc839ee4488c8b97f *data/genie.rda
+68b0d0c55a2f0aafa83d3438990b664f *data/toyapps.rda
 a593444c0b38e4b9114d75a170b8f768 *inst/doc/apprex.R
 ee3731f1a00deac951ee1b61ccd1d689 *inst/doc/apprex.Rnw
-9b3e14000079adcff95795d217cef061 *inst/doc/apprex.pdf
+35c79c8126c9c205a6f2ac8f0d8cbad4 *inst/doc/apprex.pdf
 433dfa08a7dad4e1f14417f7ce6872d7 *inst/doc/one.dim/READ.ME
 b889764faac70033aab1f7b00e249f38 *inst/doc/one.dim/apprex_1d.R
 71fc81c18ef7010a1bdf1fa1b44d9b69 *inst/doc/one.dim/datamaker_1d.R
@@ -16,7 +16,7 @@ b889764faac70033aab1f7b00e249f38 *inst/doc/one.dim/apprex_1d.R
 18d7976b0467e10afef2c1e35f6db80c *man/H.fun.Rd
 525906b8a2857c0acb70b4b3c21d567a *man/Pi.Rd
 10a2136d160000f404845c435460ddfe *man/V.fun.app.Rd
-058f0adea5c92e962f066d4c582bad9c *man/approximator.package.Rd
+d1cf08a183261f4671a1bac12d67622e *man/approximator.package.Rd
 1102f52db4e51bb6a2f5a156935713c0 *man/as.sublist.Rd
 7d409df8933bf97dff4989b4efdb9129 *man/basis.toy.Rd
 e045a2262b5d668154f8071116d90cd5 *man/betahat.app.Rd
