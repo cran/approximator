@@ -11,11 +11,6 @@
 }
 \usage{
   data(toyapps)
-  D1.toy
-  hpa.toy
-  z.toy
-  subsets.toy
-  betas.toy
 }
 \format{
 

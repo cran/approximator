@@ -14,21 +14,6 @@
 \description{
   Genie datasets that illustrate the package.
 }
-\usage{
-  data(genie)
-  D1.genie
-  hpa.genie
-  z.genie
-  subsets.genie
-  basis.genie(x)
-  hpa.fun.genie(x)
-  hpa.genie.start
-  hpa.genie.optimal
-}
-\arguments{
-  \item{x}{A 4-element vector (for \code{basis.genie()}); a  19-element
-    vector (for \code{hpa.fun.genie()})}
-  }
 \format{
 
   The genie example is a case with three levels.
